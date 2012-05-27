@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Profile</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="jquery.mobile-1.1.0/jquery.mobile-1.1.0.css" />
+	<script src="jquery.mobile-1.1.0/jquery-1.7.2.min.js"></script>
+	<script src="jquery.mobile-1.1.0/jquery.mobile-1.1.0.min.js"></script>
+</head> 
+<body> 
+	<div data-role="page">
+
+		<div data-role="header">
+			<h1>Update Profile</h1>
+			<a href="index.html" data-role="button" data-inline="true" data-theme="b" class="ui-btn-right">Home</a>
+		</div>
+		
+		<div data-role="content" class="ui-content" role="main">
+			<div class="content-primary">
+		
+		<div data-role="fieldcontain" class="ui-hide-label">
+			<form action="update.js" method="post">
+				<input type="text" placeholder="Email" name="email" id="basic" data-mini="true" />
+				<input type="password" placeholder="Password" name="password" id="basic" data-mini="true" />
+				<input type="password" placeholder="Re-Type Password" name="re-password" id="basic" data-mini="true" />
+				<input type="text" placeholder="First Name" name="fname" id="basic" data-mini="true" />
+				<input type="text" placeholder="Last Name" name="lname" id="basic" data-mini="true" />
+				<input class="ui-btn-hidden" type="submit" value="Update Profile" aria-disabled="false">
+			</form>
+			<input class="ui-btn-hidden" type="submit" value="Log Out" aria-disabled="false">
+		</div>
+		</div>
+		</div>
+	</div> <-- page </-->
+</body>
+</html>
