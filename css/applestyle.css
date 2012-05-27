@@ -1,0 +1,177 @@
+body {
+    margin:0px;
+    padding:0px;
+    background: rgb(197,204,211) url(../img/ps.png);
+    -webkit-user-select: none;
+    font-family: "Helvetica Neue", Helvetica;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;       
+}
+
+h2 {
+    font: bold 18px "Helvetica Neue", Helvetica;
+    text-shadow: rgba(255,255,255,.2) 0 1px 1px;
+    color: rgb(76, 86, 108);
+    margin: 10px 20px 6px;
+}
+
+.toolbar{
+    -webkit-box-sizing: border-box;
+    border-bottom: 1px solid #2d3642;
+    padding: 10px;
+    height: 45px;
+    background: url(../img/tb.png) #6d84a2 repeat-x;
+    position: relative;
+
+}
+.toolbar > h1 {
+    position: absolute;
+    overflow: hidden;
+    left: 50%;
+    top: 10px;
+    line-height: 1em;
+    margin: 1px 0 0 -75px;
+    height: 40px;
+    font-size: 20px;
+    width: 150px;
+    font-weight: bold;
+    text-shadow: rgba(0, 0, 0, 0.4) 0px -1px 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+}
+
+h1 + ul, h2 + ul {
+    margin-top: 0;
+}
+
+ul {
+    color: black;
+    background: #fff;
+    border: 1px solid #B4B4B4;
+    font: bold 17px "Helvetica Neue", Helvetica;
+    padding: 0;
+    margin: 15px 10px 17px 10px;
+    -webkit-border-radius: 8px;
+}
+
+ul li {
+    color: #666;
+    border-top: 1px solid #B4B4B4;
+    list-style-type: none;
+    padding: 10px 10px 10px 10px;
+}
+
+li:first-child,  li:first-child a {
+    border-top: 0;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+}
+
+ul li.mylink {
+    background-image: url(../img/arrow.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+ul li.mylink a { 
+	padding: 12px 22px 12px 10px;
+}
+
+
+ul li a{
+    color: #000;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    padding: 12px 10px 12px 10px;
+    margin: -10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.mybutton{
+    border-width: 0 12px;
+    color: #000000;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    text-decoration: inherit;
+    text-shadow: rgba(255, 255, 255, 0.7) 0 1px 0;
+    -webkit-border-image: url(../img/submitBtn.png) 0 12 0 12;
+}
+
+ ul li input[type="text"],
+ ul li input[type="password"]{
+    color: #777;
+    border: 0;
+    font: normal 17px "Helvetica Neue", Helvetica;
+    padding: 0;
+    display: inline-block;
+    margin-left: 0px;
+    width: 100%;
+    -webkit-appearance: textarea;
+}
+
+
+ .namelist{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255,255,255);
+}
+
+
+ul.namelist,  ul.namelist * {
+    -webkit-border-radius: 0 !important;
+    
+}
+	
+ ul.namelist li.sep {
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(139, 159, 171, 1)), to(rgba(181, 193, 201, 1.0)));
+    border-bottom: 1px solid #b5c1c9;
+    border-top: 1px solid #b5c1c9;
+    color: #fff;
+    font-size: 16px;
+    margin: 1px 0 0 0;
+    padding: 2px 10px;
+    text-shadow: #636a6f 0 1px 0;
+}
+
+.sometext {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    text-shadow: rgba(255,255,255,.8) 0 1px 0;
+    color: rgb(76, 86, 108);
+    padding: 0px;
+    border-top: 1px solid rgba(76, 86, 108, .3);
+    font-weight: bold;
+}
+
+.backbutton{
+    position: absolute;
+    top: 8px;
+    left: 6px;
+    margin: 0px;
+    padding: 0px 5px 0px 0px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;    
+    text-decoration: none;
+    border-width: 0 8px 0 14px;
+    -webkit-border-image: url(../img/sqrBtn.png) 0 8 0 14;
+}
+
+
+
+
+
