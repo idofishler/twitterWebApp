@@ -1,38 +1,46 @@
-<!DOCTYPE html> 
-<html> 
-	<head> 
-	<title>New Tweet</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<link rel="stylesheet" href="jquery.mobile-1.1.0/jquery.mobile-1.1.0.css" />
-	<script src="jquery.mobile-1.1.0/jquery-1.7.2.min.js"></script>
-	<script src="jquery.mobile-1.1.0/jquery.mobile-1.1.0.min.js"></script>
-</head> 
-<body> 
+<?xml version="1.0" encoding="utf-8"?>
+<html  manifest='/cache/manifest' >
+  <head>
+    <title>New Tweet</title>
+    <meta name='viewport' id='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <link href="css/main.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
 
-<div data-role="page">
+  <body>
+	 <header class="" style="display: -webkit-box; ">
+	  <div class="navItem" onclick="window.location='home.html';">
+	    <i class="navIcon tweets"></i>
+	    <div class="navLabel">Home</div>
+	  </div>
+	</header>
 
-	<div data-role="header">
-		<h1>New Tweet</h1>
-		<a href="index.html" data-role="button" data-inline="true" data-theme="b" class="ui-btn-right">Home</a>
+    <div class="frame">
+      <div id="main-content">
+      	<div class="compose module ">
+  		<div class="tweet-box-holder">
+  			<div class="top-buttons">
+			    <div class="tweet-box-button">
+			    	<span class="tweet-counter">140</span>
+      				<a class="tweet-button button" href="#">Tweet</a>
+    			</div>
+  				<div class="button button-cancel" onclick="window.location='Tweets.html';">
+  					Cancel
+  				</div>
+  			</div>
+  			<div class="text-area twttr-editor">
+    			<textarea autocorrect="on" class="tweet-box-textarea userselect" placeholder="What's happening?" autocapitalize="on"></textarea><ul class="autocomplete-container" style="visibility: hidden; "></ul>
+  			</div>
+  			<div class="buttons bottom-buttons">
+    			<div class="button camera-container" style="display: none; ">
+      				<i class="camera-icon"></i>
+    					<input class="camera-input" name="media[]" type="file" accept="image/*" capture="camera"></div>
+    				<div class="button geo-control disabled">
+      					<i class="geo-status adquiring"></i>
+    				</div>
+		  	</div>
+		</div>
+		</div>
 	</div>
-	
-	<div data-role="content" class="ui-content" role="main">
-		<div class="content-primary">
-	
-	<form id="tweetForm">
-	
-		<label for="textarea-a">New Tweet:</label>
-		<textarea name="textarea" id="textarea-a">I'm a basic textarea. If this is pre-populated with content, the height will be automatically adjusted to fit without needing to scroll. That is a pretty handy usability feature.
-		</textarea>
-		
-		<button type="submit" data-theme="b" name="submit" data-inline="true" value="submit-value" class="ui-btn-hidden" aria-disabled="false">Send</button>
-	
-	</form>
-	
 	</div>
-	</div>
-
-</div>
-
-</body>
+  </body>
 </html>
