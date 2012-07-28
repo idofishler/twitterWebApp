@@ -1,0 +1,55 @@
+<html>
+<head>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Twitter</title>
+<link rel="stylesheet" type="text/css" href="css/signup.css" />
+<script src="jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="ms_jquery.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
+</head>
+
+<body>
+<div id="currentpage" class="currentpage">
+    <div id="container">
+      <div class="timeline-head">
+        <img src="images/larrybird.png" alt="Twitter" class="larrybird">
+        <div class="title">Sign in</div>
+      </div>
+
+      <div id="main_content">
+        <div class="signup-body">
+  <form id="signin-form" action="home.html" method="post">
+    <fieldset class="inputs">
+  		<div class="signup-container">
+    		<div class="signup-field-head">Username</div>
+    		<div class="signup-field">
+         		<input autocapitalize="off" autocorrect="off" class="signup-input" id="username" name="username" placeholder="@name" type="text" >
+       		</div>
+      	</div>
+      	<div class="signup-container">
+        	<div class="signup-field-head">Password</div>
+        	<div class="signup-field">
+          		<input class="signup-input" id="password" name="password" placeholder="••••••" type="password" value="">
+        	</div>
+      	</div>
+    </fieldset>
+	    <div class="signup-button">
+	      <a href="home.html" class="signup button submit" id="signupbutton" type="submit">Sign in</a>
+	    </div>
+  </form>
+</div>
+</div>
+
+      <div class="footer">
+          <div class="signup signup-field-hint"><a href="signup.html">Sign up</a></div>
+        <div class="copyright">&copy; Ido & Dor</div>
+      </div>
+
+    </div>
+</div>
+<div id="nextpage" class="nextpage"></div>
+</body>
+</html>

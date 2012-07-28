@@ -1,0 +1,28 @@
+<div class="timeline-head homeHead">
+		<div class="backbuttonbody"><a href="#" style = "text-decoration: none; color: white; padding: 0 0 0 7px;" class="backbutton">Back</a></div>
+		<a href="#" class="navItem">
+			<i href="home.html" class="navIcon tweets"></i>
+			<div class="navLabel" href="home.html">Home</div>
+		</a>
+        <img src="images/larrybird.png" alt="Twitter" class="larrybird">
+        <div class="title">Explore</div>
+</div>
+<div class="searchbox-header" style="">
+  <form action="/search" class="search-form" method="GET">
+    <div class="search-input">
+      <i class="searchIcon"></i>
+      <input class="search-query userselect" id="user-search-box" name="search" placeholder="Search" type="search" value="" autocorrect="off" autocapitalize="off" onclick="refreshSearch()" onkeyup="refreshSearch()">
+	  <div class="searchdelete" onclick="$('#user-search-box').val(''); refreshSearch();"></div>
+    </div>
+    <a href="home.html">
+      <div class="button black cancel" href="home.html">
+        Cancel
+      </div>
+    </a>
+  </form>
+<ul class="searchsuggestions">
+
+  <div class="ac-search autocomplete-container" style="visibility: visible; ">
+	<!-- Tweest goes here -->  	
+  </div>
+</ul></div>

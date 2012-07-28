@@ -1,0 +1,35 @@
+<header class="" style="display: -webkit-box;">
+	<div class="backbuttonbody">
+		<a href="#" style = "text-decoration: none; color: white; padding: 0 0 0 7px;" class="backbutton">Back</a>
+	</div>
+	<a href="#" class="navItem"> <i href="home.html" class="navIcon tweets"></i>
+	<div class="navLabel" href="home.html">
+		Home
+	</div> </div> </a>
+	<a href="#" class="navItem" tab="compose"> <span href="newTweet.html" class="button blue"> <i href="newTweet.html" class="navIcon composeIcon"></i> </span> </a>
+</header>
+<div class='frame'>
+	<ul class="switcher black">
+		<li class="switcher-item button follwing active" tweet-type="follwing" onclick="showFollowingTweets()">
+			Following
+		</li>
+		<li class="switcher-item button me" tweet-type="me" onclick="showMyTweets()">
+			Me
+		</li>
+		<li class="switcher-item button followers" tweet-type="followers" onclick="showFollowersTweets()">
+			Followers
+		</li>
+	</ul>
+	<div id='main-content'>
+		<div class="timeline">
+			<div class="module stream-container">
+				<div class="stream-wrapper">
+					<div class="tweet-content">
+						<ul class="stream-items" type="tweets"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id='details-content'></div>
+	</div>
+</div>

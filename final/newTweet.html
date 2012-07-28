@@ -1,0 +1,41 @@
+	 <header class="" style="display: -webkit-box; ">
+		  <div class="backbuttonbody"><a href="#" style = "text-decoration: none; color: white; padding: 0 0 0 7px;" class="backbutton">Back</a></div>
+		  <a href="home.html" class="navItem">
+		    <i href="home.html" class="navIcon tweets"></i>
+		    <div class="navLabel" href="home.html">Home</div>
+		  </div>
+		  </a>
+	</header>
+	
+    <div class="frame">
+      <div id="main-content">
+      	<div class="compose module ">
+  		<div class="tweet-box-holder">
+  			<div class="top-buttons">
+			    <div class="tweet-box-button">
+						<div id="tweet-chars-left" class="tweet-counter">
+								140
+						</div>
+      				<a class="tweet-button button" href="Tweets.html">Tweet</a>
+    			</div>
+  				<a class="button button-cancel" href="Tweets.html">
+  					Cancel
+  				</a>
+  			</div>
+  			<div class="text-area twttr-editor">
+    			<textarea autocorrect="on" id="new-tweet" class="tweet-box-textarea userselect" placeholder="What's happening?" autocapitalize="on" onkeyup="updateLength()"></textarea><ul class="autocomplete-container" style="visibility: hidden; "></ul>
+  			</div>
+  			<div class="buttons bottom-buttons">
+    			<div class="button camera-container" style="display: none; ">
+      				<i class="camera-icon"></i>
+    					<input class="camera-input" name="media[]" type="file" accept="image/*" capture="camera"></div>
+    				<div class="button geo-control disabled">
+      					<i class="geo-status adquiring"></i>
+    				</div>
+		  	</div>
+			<div id="geo-location-text" class="tweet-counter" onclick="startGeolocation()">Touch to Add Location</div>
+			<input type="hidden" id="geo-location-coord" value="">
+		</div>
+		</div>
+	</div>
+	</div>
